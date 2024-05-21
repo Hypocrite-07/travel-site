@@ -1,0 +1,66 @@
+
+.promo_det-prom {
+  width: 685px;
+  height: 897px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+.promotion-carts {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 25px;
+    width: 695px;
+    height: 897px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 5px solid rgb(215, 215, 215);
+    border-radius: 63px;
+    background: rgb(250, 250, 250);
+    
+
+}
+
+.promotion-carts img {
+  width: 100%;
+  height: 398px;
+  
+  
+}
+
+.promo-texts {
+  width: 622px;
+  height: 310px;
+
+}
+
+.subtitle {
+  margin-right: -30px;
+  margin-left: 31px;
+  margin-top: 63px;
+  color: rgb(0, 0, 0);
+  font-family: "Inter-Regular";
+  font-size: 26px;
+  font-weight: 400;
+
+}
+
+.title {
+  margin-top: 45px;
+  padding-left: 50px;
+  color: rgb(31, 31, 31);
+  font-family: "Inter-Bold";
+  font-size: 36px;
+  font-weight: 700;
+}
+.promo_rec{
+  height: 2087px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

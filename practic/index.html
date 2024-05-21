@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="nav_logo" src="img/Logo.png" alt="Логотип" class="logo">
+            </a>
+            <div class="nav_bar">
+                <a class="nav_links" href="all-promos.html">Акции</a>
+                <a class="nav_links" href="#">Управление бронированием</a>
+                <a class="nav_links" href="#">Все маршруты</a>
+            </div>
+            <div class="nav_numbers">
+                <p class="nav_number">8 (800) 555-33-10</p>
+                <p class="nav_number_one">Исполнить мечты просто!</p>
+            </div>
+        </nav>
+    </header>
+    <section id="main" class="main">
+        <div class="main_color">
+            <div class="main_text">
+                <h1 class="main_title">Выбрать путешествие</h1>
+        <div class="main_categories">
+            <a href="#" class="main_category">Многодневные</a>
+            <a href="#" class="main_category">Однодневные</a>
+            <a href="#" class="main_category">Необычные</a>
+        </div>
+        <div class="main_choice">
+            <div class="main_search">
+                <input class="main_input" type="text" placeholder="Куда вы хотите?">
+                <img class="main_img" src="svg/Search.svg" alt="">
+            </div>
+        <div class="main_line"></div>
+        <div class="main_calendar">
+            <input id="date-input" class="main_input" type="text" placeholder="Месяц или даты?" readonly>
+            <img id="calendar-icon" class="main_img" src="svg/Calendar.svg" alt="">
+        </div>
+        <div class="main_line"></div>
+        <div class="main_quantity">
+            <p>Участников</p>
+            <div class="main_counters">
+                <a href="#" id="decrease" class="main_counter">-</a>
+                <p id="participant-count" class="main_digit">1</p>
+                <a href="#" id="increase" class="main_counter">+</a>                    
+            </div>
+        </div>
+        </div>
+            </div>
+            <a href="#" class="main_btn">Найти</a>
+        </div>
+    </section>
+
+    <section id="main-reserv" class="reserv">
+        <p class="reserv_title">Алгоритм бронирования</p>
+        <img class="reserv_cards" src="svg/Карточки.svg" alt="" style="pointer-events: none;">
+    </section>
+
+    <section class="motto">
+        <img class="motto_cards" src="svg/О компании.svg" alt="" style="pointer-events: none;">
+    </section>
+
+    <section id="main-review" class="review">
+        <div class="review_color">
+            <p class="review_title">Отзывы</p>
+            <div class="slider" id="testimonials">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Ellipse 6.png" alt="Антон">
+                                <h3>АНТОН</h3>
+                            </div>
+                            <p>Вступила весна в права ощутимо, Природа проснулась и радует глаз. Походов желание неистребимо, -- И путь наш лежит прямиком на Кавказ. В майских горах неле...</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Ellipse 6 (1).png" alt="ТАТЬЯНА">
+                                <h3>ТАТЬЯНА</h3>
+                            </div>
+                            <p>Несмотря на то, что нам категорически не повезло с погодой, инструктора сделали этот поход отличным! В первый раз с ребенком решили попробовать отдых на байдарках...</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Ellipse 6 (2).png" alt="СОФИЯ">
+                                <h3>СОФИЯ</h3>
+                            </div>
+                            <p>Замечательный инструктор Мария провела нас по множеству красочных мест Мезмая! Мы прекрасно провели время, прям очень хорошо!</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Юрий.png" alt="Юрий">
+                            <h3>ЮРИЙ</h3>
+                            </div>
+                            <p>Это был первый мой сплав на бурной воде (раньше только на спокойной). После сплавов на спокойной воде хотел чуть больше экстрима и хардкора, я получил что хотел). Поход вышел суперский! </p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Александр.png" alt="Александр">
+                            <h3>АЛЕКСАНДР</h3>
+                            </div>
+                            <p>Поход прошел на ура - можно много написать, но нет времени. Просто скажу спасибо остальным участникам за позитивную атмосферу и Юре с Катериной за замечательный поход.</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Юлия.png" alt="Юлия">
+                            <h3>ЮЛИЯ</h3>
+                            </div>
+                            <p>Особенно понравилась атмосфера в группе, спасибо инструкторам и участникам, здесь важен вклад каждого. Очень разнообразно сходили по погоде, посмотрели интересные места. Получилось, что где-то на чилле, а где-то с молитвами)) в общем, как раз то, что нужно).</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Ольга.png" alt="Ольга">
+                                <h3>ОЛЬГА</h3>                            
+                            </div>
+                            <p>Андрей на протяжении похода повторял пророческую фразу "Попробовать надо всё". Так и вышло: мы шли по полям, лесам, дорогам всех покрытий; в горку, с горки, по плоскости; шли под снегом, ветром, дождиком, солнцем, облаками (какие они были красивые!).</p>                                                   
+                        </div>
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Дмитрий.png" alt="Дмитрий">
+                                <h3>ДМИТРИЙ</h3>
+                            </div>
+                            <p>Отличный получился поход!Это мой второй опыт сплава по бурной майской воде с КП (в прошлом году была великолепная ШУЯ), поэтому базовые ожидания были высокими - и они полностью оправдались.</p>                                                        
+                        </div>
+                        <div class="testimonial">
+                            <div class="test_title">
+                                <img src="img/Михаил.png" alt="Михаил">
+                                <h3>МИХАИЛ</h3>              
+                            </div>
+                            <p>Практически все походы с Турист-про это замечательно организованные и качественно спланированные мероприятия. Но то что сделали ребята в Лосево это просто гениально!!!</p>                                                        
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+        
+    </section>
+   
+    <section id="main-promotions">
+        <div class="promo_rec">
+                <h2 class="promo-detail">Акции</h2>
+            <div class="promotion">
+                <div class="promo_d">
+                    <img src="img/Rectangle 32.png" alt="Друзья в горах">
+                <div class="promo-details">
+                    <h3 class="promo_title">Друзья в горах</h3>
+                    <p class="promo_subtitle">Пригласите своих друзей на увлекательное приключение в горы и получите скидку 20% на каждого участника при регистрации группы из 4 человек или более</p>
+                    <button class="promo-btn" onclick="location.href='all-promos.html'">Подробнее</button>
+                </div>
+                </div>
+            </div>
+            <div class="promotion2">
+                <div class="promo_d2">
+                    <img src="img/Rectangle 31.png" alt="Тропами истории">
+                <div class="promo-details2">
+                    <h3 class="promo_title">Тропами истории</h3>
+                    <p class="promo_subtitle2">Отправляйтесь в увлекательное путешествие по историческим маршрутам и получите скидку 15% на любой тур, который включает посещение исторических памятников</p>
+                    <button class="promo-btn" onclick="location.href='all-promos.html'">Подробнее</button>
+                </div>
+                </div>
+            </div>
+            <button class="all-promos-btn" onclick="location.href='all-promos.html'">Все свежие акции</button>
+
+            <section id="subscribe">
+                
+                    <h2 class="sub_title">Присоединяйтесь к закрытому клубу привилегий!</h2>
+                <p class="sub_subtitle">Хотите получать эксклюзивные предложения и скидки на наши туры? Оставьте свой Email ниже, чтобы стать частью нашего клуба и первыми узнавать о специальных акциях!</p>
+                <form id="subscribe-form" onsubmit="subscribe(event)">
+                    <input type="email" id="email" placeholder="Поле для ввода Email" required>
+                    <button class="input_btn" type="submit">Подписаться</button>
+                </form>                        
+            </section>
+        </div>
+    </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3 class="fot_title">Навигация</h3>
+                    <ul>
+                        <li><a href="#main" class="footer-link">Выбрать путешествие</a></li>
+                        <li><a href="#main-reserv" class="footer-link">Алгоритм бронирования</a></li>
+                        <li><a href="#main-review" class="footer-link">Отзывы</a></li>
+                        <li><a href="#main-promotions" class="footer-link">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo">
+                    <img src="svg/Logo.svg" alt="Турист-pro Логотип">
+                </div>
+                <div class="footer-section" id="fot">
+                    <h3>Связаться с нами</h3>
+                    <p>8 (800) 555-33-10</p>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Add jQuery and jQuery UI -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
