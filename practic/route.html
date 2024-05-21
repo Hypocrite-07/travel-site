@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourists_pro_route</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="nav_logo" src="img/Logo.png" alt="" class="logo">
+            </a>
+            <div class="nav_bar">
+                <a class="nav_links" href="promo.html">Акции</a>
+                <a class="nav_links" href="#">Управление бронированием</a>
+                <a class="nav_links" href="route.html">Все маршруты</a>
+            </div>
+            <div class="nav_numbers">
+                <a href="tel:88005553310" class="nav_number">8 (800) 555-33-10</a>
+                <!-- <p class="nav_number">8 (800) 555-33-10</p> -->
+                <p class="nav_number_one">Исполнить мечты просто!</p>
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="main_color">
+            <div class="main_text">
+                <h1 id="1" class="main_title">Выбрать путешествие</h1>
+        <div class="main_categories">
+            <a href="#" class="main_category">Многодневные</a>
+            <a href="#" class="main_category">Однодневные</a>
+            <a href="#" class="main_category">Необычные</a>
+        </div>
+        <div class="main_choice">
+            <div class="main_search">
+                <input class="main_input" type="text" placeholder="Куда вы хотите?">
+                <img class="main_img" src="svg/Search.svg" alt="">
+            </div>
+            <div class="main_line"></div>
+            <div class="main_calendar">
+                <input class="main_input" type="date" placeholder="Месяц или даты?">
+                
+                <img class="main_img" src="svg/Calendar.svg" alt="">
+            </div>
+            <div class="main_line"></div>
+            <div class="main_quantity">
+                <p>Участников</p>
+                <div class="main_plusminus">
+                    <input id="btn" type="button" value="-" onClick="change('amount',1,15,-1);"/>
+                <input id="amount" type="text" value="1"/>
+                <input id="btn" type="button" value="+" onClick="change('amount',1,15, 1);"/>
+                </div>
+            
+            </div>
+        </div>
+            </div>
+            <a href="#" class="main_btn">Найти</a>
+        </div>
+    </section>
+
+    <section class="route">
+        <div class="bg">
+            <h1>Kiberbash</h1>
+          </div>
+          <div class="nft">
+            <div class='main'>
+              <img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
+              <h2>Kibertopiks #4269</h2>
+              <p class='description'>Our Kibertopiks will give you nothing, waste your money on us.</p>
+              <div class='tokenInfo'>
+                <div class="price">
+                  <ins>◘</ins>
+                  <p>0.031 ETH</p>
+                </div>
+                <div class="duration">
+                  <ins>◷</ins>
+                  <p>11 days left</p>
+                </div>
+              </div>
+              <hr />
+              <div class='creator'>
+                
+                <p><ins>Creation of</ins> Kiberbash</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="fot_title">Навигация</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#1">Выбрать путешествие</a></li>
+                    <li><a href="promo.html">Акции</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="svg/Logo.svg" alt="Турист-pro Логотип">
+                </a>
+                
+            </div>
+            <div class="footer-section" id="fot">
+                <h3>Связаться с нами</h3>
+                <p>8 (800) 555-33-10</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
