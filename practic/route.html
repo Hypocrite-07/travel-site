@@ -24,10 +24,10 @@
             </div>
         </nav>
     </header>
-    <section class="main">
+    <section id="main" class="main">
         <div class="main_color">
             <div class="main_text">
-                <h1 id="1" class="main_title">Выбрать путешествие</h1>
+                <h1 class="main_title">Выбрать путешествие</h1>
         <div class="main_categories">
             <a href="#" class="main_category">Многодневные</a>
             <a href="#" class="main_category">Однодневные</a>
@@ -38,22 +38,20 @@
                 <input class="main_input" type="text" placeholder="Куда вы хотите?">
                 <img class="main_img" src="svg/Search.svg" alt="">
             </div>
-            <div class="main_line"></div>
-            <div class="main_calendar">
-                <input class="main_input" type="date" placeholder="Месяц или даты?">
-                
-                <img class="main_img" src="svg/Calendar.svg" alt="">
+        <div class="main_line"></div>
+        <div class="main_calendar">
+            <input id="date-input" class="main_input" type="text" placeholder="Месяц или даты?" readonly>
+            <img id="calendar-icon" class="main_img" src="svg/Calendar.svg" alt="">
+        </div>
+        <div class="main_line"></div>
+        <div class="main_quantity">
+            <p>Участников</p>
+            <div class="main_counters">
+                <a href="#" id="decrease" class="main_counter">-</a>
+                <p id="participant-count" class="main_digit">1</p>
+                <a href="#" id="increase" class="main_counter">+</a>                    
             </div>
-            <div class="main_line"></div>
-            <div class="main_quantity">
-                <p>Участников</p>
-                <div class="main_plusminus">
-                    <input id="btn" type="button" value="-" onClick="change('amount',1,15,-1);"/>
-                <input id="amount" type="text" value="1"/>
-                <input id="btn" type="button" value="+" onClick="change('amount',1,15, 1);"/>
-                </div>
-            
-            </div>
+        </div>
         </div>
             </div>
             <a href="#" class="main_btn">Найти</a>
@@ -61,28 +59,98 @@
     </section>
 
     <section class="route">
-        <div class="bg">
-            <h1>Kiberbash</h1>
-          </div>
+        <div class="route_course">
+            <div class="diration">
+                <p>Длительность</p>
+                <div class="diration_input">
+                    <input type="number" placeholder="От (дней)" min="1" max="99">
+                <input type="number" placeholder="До (дней)" min="1" max="99">
+                </div>
+            </div>
+            <hr>
+            <div class="prici">
+                <div class="prici_price">
+                    <p>Цена ₽</p>
+                    <a href="#">Сбросить</a>
+                </div>
+                <input type="number" placeholder="От" min="1" max="999999">
+                <input type="number" placeholder="До" min="1" max="999999">
+            </div>
+            <hr>
+            <div class="complexity">
+                <p>Сложность</p>
+                <div class="cotegories">
+                    <a href="" class="cotegorys">Для всех</a>
+                    <a href="" class="cotegorys">Средняя</a>
+                    <a href="" class="cotegorys">Сложная</a>
+                </div>
+            </div>
+        </div>
           <div class="nft">
-            <div class='main'>
-              <img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
-              <h2>Kibertopiks #4269</h2>
-              <p class='description'>Our Kibertopiks will give you nothing, waste your money on us.</p>
+            <div class='maen'>
+              <img class='tokenImage' src="img/Rectangle 32.png" alt="NFT" />
+              <h2>Знакомство с Грузией: ПОЛНОЕ ПОГРУЖЕНИЕ! Горы, еда, вино,... </h2>
+              <p class='description'>Ждём тебя в прекрасной Грузии! Будем наслаждаться жизнью, пог...</p>
               <div class='tokenInfo'>
                 <div class="price">
-                  <ins>◘</ins>
-                  <p>0.031 ETH</p>
+                  <s>₽ 63 850</s>
+                  <p>₽ 51 080</p>
                 </div>
                 <div class="duration">
-                  <ins>◷</ins>
-                  <p>11 days left</p>
+                  <p>/ 7 дней</p>
                 </div>
               </div>
-              <hr />
+              
               <div class='creator'>
                 
-                <p><ins>Creation of</ins> Kiberbash</p>
+                <p>19 - 25 мая</p>
+                <a href="#">Бронировать</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="nft">
+            <div class='maen'>
+              <img class='tokenImage' src="img/Rectangle 31.png" alt="NFT" />
+              <h2>Знакомство с Грузией: ПОЛНОЕ ПОГРУЖЕНИЕ! Горы, еда, вино,... </h2>
+              <p class='description'>Ждём тебя в прекрасной Грузии! Будем наслаждаться жизнью, пог...</p>
+              <div class='tokenInfo'>
+                <div class="price">
+                  <s>₽ 63 850</s>
+                  <p>₽ 51 080</p>
+                </div>
+                <div class="duration">
+                  <p>/ 7 дней</p>
+                </div>
+              </div>
+              
+              <div class='creator'>
+                
+                <p>19 - 25 мая</p>
+                <a href="#">Бронировать</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="nft">
+            <div class='maen'>
+              <img class='tokenImage' src="img/Rectangle 23.png" alt="NFT" />
+              <h2>Знакомство с Грузией: ПОЛНОЕ ПОГРУЖЕНИЕ! Горы, еда, вино,... </h2>
+              <p class='description'>Ждём тебя в прекрасной Грузии! Будем наслаждаться жизнью, пог...</p>
+              <div class='tokenInfo'>
+                <div class="price">
+                  <s>₽ 63 850</s>
+                  <p>₽ 51 080</p>
+                </div>
+                <div class="duration">
+                  <p>/ 7 дней</p>
+                </div>
+              </div>
+              
+              <div class='creator'>
+                
+                <p>19 - 25 мая</p>
+                <a href="#">Бронировать</a>
               </div>
             </div>
           </div>
@@ -110,6 +178,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
