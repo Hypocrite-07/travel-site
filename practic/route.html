@@ -6,66 +6,9 @@
     <title>Tourists_pro_route</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .card-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-        .card-content {
-            padding: 15px;
-        }
-        .card-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .card-description {
-            font-size: 0.9em;
-            margin-bottom: 10px;
-        }
-        .card-price {
-            font-size: 1.1em;
-            color: #333;
-        }
-        .card-price del {
-            color: #999;
-            margin-right: 10px;
-        }
-        .card-date,
-        .card-duration {
-            font-size: 0.8em;
-            color: #666;
-        }
-        .card-button {
-            display: block;
-            text-align: center;
-            padding: 10px;
-            margin-top: 10px;
-            background-color: #ccc;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            color: #333;
-        }
-        .card-button:hover {
-            background-color: #bbb;
-        }
-
-        .dropdown {
+    <link rel="stylesheet" href="styles.css">
+	<style>
+	.dropdown {
             display: none;
             top: 80px;
             position: absolute;
@@ -114,7 +57,7 @@
     <section class="main" id="main">
         <div class="main_color">
             <div class="main_text">
-                <h1 id="1" class="main_title">Выбрать путешествие</h1>
+                <h1 class="main_title">Выбрать путешествие</h1>
                 <div class="main_categories">
                     <a class="main_category" href="#">Многодневные</a>
                     <a class="main_category" href="#">Однодневные</a>
@@ -127,7 +70,6 @@
                         <div class="dropdown" id="dropdown">
                             <a href="#">Грузия</a>
                             <a href="#">Дагестан</a>
-                            <a href="#">Австралия</a>
                         </div>
                     </div>
 
@@ -147,53 +89,166 @@
                     </div>
                 </div>
             </div>
-            <a class="main_btn" href="route.html" id="find-btn">Найти</a>
+            <a class="main_btn" href="#" id="find-btn">Найти</a>
         </div>
     </section>
 
-    <section>
-        <div class="card-container">
-            <div class="card" data-destination="Грузия">
-                <img src="img/Gruzia.png" alt="Грузия">
-                <div class="card-content">
-                    <div class="card-title">Знакомство с Грузией: ПОЛНОЕ ПОГРУЖЕНИЕ! Горы, еда, вино,...</div>
-                    <div class="card-description">Ждём тебя в прекрасной Грузии! Будем наслаждаться жизнью, пог...</div>
-                    <div class="card-price">
-                        <del>₽ 63 850</del>
-                        ₽ 51 080 / 7 дней
-                    </div>
-                    <div class="card-date">19 - 25 мая</div>
-                    <a class="card-button" href="#">Бронировать</a>
+    <section class="route">
+        <div class="route_course">
+            <div class="diration">
+                <p>Длительность</p>
+                <div class="diration_input">
+                    <input type="number" placeholder="От (дней)" min="1" max="99">
+                <input type="number" placeholder="До (дней)" min="1" max="99">
                 </div>
             </div>
-
-            <div class="card" data-destination="Дагестан">
-                <img src="img/Dagestan.png" alt="Дагестан">
-                <div class="card-content">
-                    <div class="card-title">ВОЛШЕБНЫЙ ДАГЕСТАН! 5 ДНЕЙ ВСЕ ВКЛЮЧЕНО</div>
-                    <div class="card-description">Отдых, насыщенный культурой, кулинарией и потрясающими пейза...</div>
-                    <div class="card-price">
-                        <del>₽ 60 000</del>
-                        ₽ 38 900 / 5 дней
-                    </div>
-                    <div class="card-date">16 - 20 мая</div>
-                    <a class="card-button" href="#">Бронировать</a>
+            <hr>
+            <div class="prici">
+                <div class="prici_price">
+                    <p>Цена ₽</p>
+                    <a href="#">Сбросить</a>
                 </div>
+                <input type="number" placeholder="От" min="1" max="999999">
+                <input type="number" placeholder="До" min="1" max="999999">
             </div>
-
-            <div class="card" data-destination="Австралия">
-                <img src="img/Australia.png" alt="Австралия">
-                <div class="card-content">
-                    <div class="card-title">АВСТРАЛИЯ</div>
-                    <div class="card-description">Первой причиной посетить Австралию является её фантастическая...</div>
-                    <div class="card-price">
-                        ₽ 562 261 / 7 дней
-                    </div>
-                    <div class="card-date">27 окт. - 12 ноя.</div>
-                    <a class="card-button" href="#">Бронировать</a>
+            <hr>
+            <div class="complexity">
+                <p>Сложность</p>
+                <div class="cotegories">
+                    <a href="" class="cotegorys">Для всех</a>
+                    <a href="" class="cotegorys">Средняя</a>
+                    <a href="" class="cotegorys">Сложная</a>
                 </div>
             </div>
         </div>
+          <div class="nft" data-destination="Грузия">
+            <div class='maen'>
+              <img class='tokenImage' src="img/Gruzia.png" alt="NFT" />
+              <h2>Знакомство с Грузией: ПОЛНОЕ ПОГРУЖЕНИЕ! Горы, еда, вино,... </h2>
+              <p class='description'>Ждём тебя в прекрасной Грузии! Будем наслаждаться жизнью, пог...</p>
+              <div class='tokenInfo'>
+                <div class="price">
+                  <s>₽ 63 850</s>
+                  <p>₽ 51 080</p>
+                </div>
+                <div class="duration">
+                  <p>/ 7 дней</p>
+                </div>
+              </div>
+              
+               <div class='creator'>
+                
+                <p class="creator_data">19 - 25 мая</p>
+                
+                <a href="#" id="min">
+                  <div id="okno">
+                    <p class="okno_cross">✕</p>
+                    <img src="img/Gruzia.png" alt="">
+                    
+                    
+                  </div>
+                  <p class="okno_title">Знакомство с Грузией: ПОЛНОЕ ПОГРУЖЕНИЕ! Горы, еда, вино, храмы</p>
+                  <div class="okno_subtitle">
+                    <p>Тур подходит тем, кто любит наслаждаться жизнью и с радостью открывает для себя новые страны! Грузия запомнится вам яркой, цветущей, очень вкусной и радушной. 
+                      <br><br>За 7 дней мы посмотрим самые знаковые достопримечательности Грузии!  Древние храмы, вкусные винодельни, парки, крепости с богатой историей, красивейший город Тбилиси, пещерные города, горы. Попробуем прекрасные вина и волшебную кухню, в которой можно найти блюда на любой вкус, будем кушать пастилу и чурчхелу, местный натуральный сыр. А рассказы и тосты местных гидов придадут путешествию дополнительный колорит.</p>
+                      <div class="okno_items">
+                        <div class="okno_item">
+                          <input type="text" placeholder="Выберите даты">
+                          <input type="number" placeholder="Участников" id="input_one_gruzia">
+                        </div>
+                        <div class="okno_services">
+                          <p>Дополнительные услуги</p>
+                          <ul class="okno_list">
+                            <li><input type="checkbox" class="okno_check">Услуги проводника</li>
+                            <li><input type="checkbox" class="okno_check">Услуги аренды тур оборудования</li>
+                            <li><input type="checkbox" class="okno_check">Услуги фотографа/оператора</li>
+                            <li><input type="checkbox" class="okno_check">Страхование</li>
+                          </ul>
+                          
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="okno_footer">
+                      <h3 class="okno_footer__title">от ₽ 51 080</h3>
+                      <button>Бронировать</button>
+                        <p>19 - 25 мая</p>
+                    </div>
+                </a>
+                 
+                <a href="#min">Бронировать</a>
+              </div> 
+            </div>
+            
+          </div>
+          
+          <div class="nft" data-destination="Дагестан">
+            <div class='maen'>
+              <img class='tokenImage' src="img/Dagestan.png" alt="NFT" />
+              <h2>ВОЛШЕБНЫЙ ДАГЕСТАН! 5 ДНЕЙ ВСЕ ВКЛЮЧЕНО</h2>
+              <p class='description'>Отдых, насыщенный культурой, кулинарией и потрясающими пейза...</p>
+              <div class='tokenInfo'>
+                <div class="price">
+                  <s>₽ 60 000</s>
+                  <p>₽ 38 900</p>
+                </div>
+                <div class="duration">
+                  <p>/ 5 дней</p>
+                </div>
+              </div>
+              
+               <div class='creator'>
+                
+                <p class="creator_data">16 - 20 мая</p>
+                
+                <a href="#" id="mis">
+                  <div id="okno">
+                    <p class="okno_cross">✕</p>
+                    <img src="img/Dagestan.png" alt="">
+                    
+                    
+                  </div>
+                  <p class="okno_title">ВОЛШЕБНЫЙ ДАГЕСТАН! 5 ДНЕЙ ВСЕ ВКЛЮЧЕНО</p>
+                  <div class="okno_subtitle">
+                    <p>Тур подходит тем, кто любит наслаждаться жизнью и с радостью открывает для себя новые страны! Грузия запомнится вам яркой, цветущей, очень вкусной и радушной. 
+                      <br><br>За 7 дней мы посмотрим самые знаковые достопримечательности Грузии!  Древние храмы, вкусные винодельни, парки, крепости с богатой историей, красивейший город Тбилиси, пещерные города, горы. Попробуем прекрасные вина и волшебную кухню, в которой можно найти блюда на любой вкус, будем кушать пастилу и чурчхелу, местный натуральный сыр. А рассказы и тосты местных гидов придадут путешествию дополнительный колорит.</p>
+                      <div class="okno_items">
+                        <div class="okno_item">
+                          <input type="text" placeholder="Выберите даты">
+                          <input type="number" placeholder="Участников" id="input_one">
+                        </div>
+                        <div class="okno_services">
+                          <p>Дополнительные услуги</p>
+                          <ul class="okno_list">
+                            <li><input type="checkbox" class="okno_check">Услуги проводника</li>
+                            <li><input type="checkbox" class="okno_check">Услуги аренды тур оборудования</li>
+                            <li><input type="checkbox" class="okno_check">Услуги фотографа/оператора</li>
+                            <li><input type="checkbox" class="okno_check">Страхование</li>
+                          </ul>
+                          
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="okno_footer">
+                      <h3 class="okno_footer__title">от ₽ 51 080</h3>
+                      <button>
+                        
+                      Бронировать</button>
+                        <p>16 - 20 мая</p>
+                    </div>
+                </a>
+                 
+                <a class="okno_open" href="#mis">Бронировать</a>
+              </div> 
+            </div>
+            
+          </div>
+
+          
+          
     </section>
 
     <footer>
@@ -202,7 +257,7 @@
                 <h3 class="fot_title">Навигация</h3>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#1">Выбрать путешествие</a></li>
+                    <li><a href="#">Выбрать путешествие</a></li>
                     <li><a href="promo.html">Акции</a></li>
                 </ul>
             </div>
@@ -249,7 +304,7 @@
 
         function filterCards() {
             const destination = document.getElementById('main_input').value.toLowerCase();
-            const cards = document.querySelectorAll('.card');
+            const cards = document.querySelectorAll('.nft');
 
             cards.forEach(card => {
                 const cardDestination = card.getAttribute('data-destination').toLowerCase();
@@ -262,9 +317,11 @@
         }
     </script>
 
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
