@@ -6,7 +6,7 @@
 }
 
 html {
-    width: 1920px;
+    max-width: 1920px;
     overflow-x: hidden;
 }
 
@@ -696,18 +696,7 @@ code {
 }
 
 #min {
-    display: none;
-    position: absolute;
-    text-align: right;
-    top: 850px;
-    left: 400px;
-    width: 837px;
-    min-height: 1198px;
-    box-sizing: border-box;
-    border: 5.25px solid rgb(215, 215, 215);
-    border-radius: 52.48px;
-    background: rgb(250, 250, 250);
-    z-index: 2;
+    
     
     
   }
@@ -819,7 +808,7 @@ code {
         border-radius: 20.99px;
         background: rgb(171, 171, 171);
         color: rgb(250, 250, 250);
-        font-family: Inter;
+        font-family: "Inter-Bold";
         font-size: 32.46px;
         font-weight: 500;
         margin-bottom: 25px;
@@ -838,19 +827,10 @@ code {
     }
 }
 
-#mis {
-    display: none;
-    position: absolute;
-    text-align: right;
-    top: 850px;
-    left: 400px;
-    width: 837px;
-    min-height: 1198px;
-    box-sizing: border-box;
-    border: 5.25px solid rgb(215, 215, 215);
-    border-radius: 52.48px;
-    background: rgb(250, 250, 250);
-    z-index: 2;
+.cmt {
+ 
+    
+
     
     
   }
@@ -879,7 +859,7 @@ code {
     font-size: 31.49px;
     font-weight: 700;
 }
-  #mis:target {display: block;}
+
 
 .okno_subtitle {
     margin-top: 20px;
@@ -911,12 +891,16 @@ code {
             box-sizing: border-box;
             border: 2px solid rgb(215, 215, 215);
             border-radius: 10px;
+            color: rgb(150, 150, 150);
+            font-family: 'Inter-Regular';
+            font-size: 17px;
+            font-weight: 400;
         }
     }
 } 
   
 .okno_services {
-    width: 100%;
+        width: 100%;
         height: 60%;
     p {
         padding-bottom: 20px;
@@ -955,17 +939,24 @@ code {
     }
 
     button {
-        margin-right: 150px;
+        margin-right: 10px;
         padding: 11px 150px;
         box-sizing: border-box;
         border: 2.1px solid rgb(199, 199, 199);
         border-radius: 20.99px;
         background: rgb(171, 171, 171);
         color: rgb(250, 250, 250);
-        font-family: Inter;
+        font-family: "Inter-Bold";
         font-size: 32.46px;
         font-weight: 500;
         margin-bottom: 25px;
+        cursor: pointer;
+    }
+
+    button:hover 
+    {
+        background: rgb(226, 226, 226);
+        transition: all 0.3s;
     }
 
     p {
@@ -979,4 +970,124 @@ code {
         border: 2.1px solid rgb(199, 199, 199);
         border-radius: 12px;
     }
+} 
+
+/* Контейнер для кнопки, чтобы не прыгал контент, когда она сменит позиционирование */
+.css-modal-details {
+    height: 60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+ 
+/* Кнопка для открытия */
+.css-modal-details summary {
+    display: inline-flex;
+    margin: 10px;
+    margin-left: 90px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Inter-Bold';
+    
+    cursor: pointer;
+    
+    overflow: hidden;
+    z-index: 1;    
+    box-sizing: border-box;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 20px;
+    background: rgb(171, 171, 171);
+}
+.css-modal-details summary:hover,
+.css-modal-details summary:active,
+.css-modal-details summary:focus {
+    color: #FFF;
+}
+.css-modal-details summary:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #868686;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.css-modal-details summary:hover:before,
+.css-modal-details summary:active:before,
+.css-modal-details summary:focus:before {
+    transform: translateX(0);
+}
+ 
+/* Кнопка при открытом окне переходит на весь экран */
+.css-modal-details details[open] summary {
+    cursor: default;
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* Контейнер, который затемняет страницу */
+.css-modal-details details .cmc {
+    display:flex;
+    align-items:center;
+    justify-content:center;    
+}
+.css-modal-details details[open] .cmc {
+    pointer-events: none;
+    z-index: 4;
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    
+}
+ 
+/* Модальное окно */
+.css-modal-details details .cmt {
+    position: absolute;
+    right: 1000px;
+    text-align: right;
+  
+    width: 837px;
+    min-height: 1198px;
+    box-sizing: border-box;
+    border: 5.25px solid rgb(215, 215, 215);
+    border-radius: 85px 85px 52.48px 52.48px;
+    background: rgb(250, 250, 250);
+
+   
+
+   
+    transition: 0.5s;
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: auto;
+}
+.css-modal-details details[open] .cmt {
+    animation: scale 0.5s ease;
+    z-index: 4;
+    pointer-events: auto;
+}
+ 
+
+
+#modal {
+    left: 0;
 }
